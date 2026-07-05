@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember — Privacy Policy</title>
+  <meta name="description" content="Ember's privacy policy: your screen time is measured by iOS and stays on your phone. Only display mirrors sync — never your hours.">
+  <meta name="author" content="Friedrich von Werner">
+  <link rel="canonical" href="https://fvonwerner.github.io/ember/privacy/">
+  <link rel="icon" href="../ember-icon.png">
+  <style>
+    :root {
+      --paper: #faf6ef; --border: #ede6d9; --ink: #26221b; --ink2: #7a7264;
+      --green: #1f6650; --greensoft: #dceae0;
+      --serif: ui-serif, Georgia, "Times New Roman", serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { color-scheme: light; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+    .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.5rem 4rem; }
+    header { display: flex; align-items: center; gap: 0.75rem; padding: 1.5rem 0 2.5rem; }
+    header img { border-radius: 22.5%; border: 1px solid var(--border); display: block; }
+    header a { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none; }
+    h1 { font-family: var(--serif); font-size: 2.25rem; letter-spacing: -0.01em; margin-bottom: 0.5rem; }
+    .updated { color: var(--ink2); font-size: 0.875rem; margin-bottom: 2.5rem; }
+    h2 { font-family: var(--serif); font-size: 1.375rem; margin: 2.25rem 0 0.75rem; }
+    p, li { color: var(--ink); margin-bottom: 0.75rem; max-width: 65ch; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+    .callout { background: var(--greensoft); border-radius: 16px; padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    .callout p { margin: 0; color: var(--green); font-weight: 500; }
+    footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.5rem; font-size: 0.875rem; color: var(--ink2); }
+    footer a { color: var(--green); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="../ember-icon.png" alt="Ember app icon" width="28" height="28">
+      <a href="../">Ember</a>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 5, 2026</p>
+
+    <div class="callout">
+      <p>The short version: your screen time is measured by iOS and stays on your phone. Ember never uploads your hours, your app list, or anything you look at. Friends see only what the app shows them: your name and tag, your daily limit, your streak, your day outcomes, and your lockdown time.</p>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>Ember is made by Friedrich von Werner. For privacy questions, use the contact
+    published on Ember's App Store page.</p>
+
+    <h2>Screen time data stays on your device</h2>
+    <p>Ember uses Apple's Screen Time frameworks (Family Controls, Device Activity,
+    Managed Settings) to measure your usage of the apps you choose and to shield
+    them when your daily limit is reached. This data is processed entirely on your
+    device. Ember has no server that receives it, and we never use it for
+    advertising or share it with anyone. Apple's frameworks are designed so that
+    even Ember itself sees only coarse threshold events, not your browsing.</p>
+
+    <h2>What syncs when you use the circle</h2>
+    <p>If you add friends, Ember stores a small profile in Apple's iCloud
+    (CloudKit), so your circle can see it:</p>
+    <ul>
+      <li>your display name and user tag (chosen by you — no email, no phone number),</li>
+      <li>your daily limit in minutes,</li>
+      <li>your current streak and how each recent day ended (kept, kept with help, over, unverified),</li>
+      <li>your voluntary lockdown minutes per week (time you chose to put the phone down),</li>
+      <li>friendships, nudges, and partner requests/answers you send.</li>
+    </ul>
+    <p>Never synced: your hours of usage, which apps you track, or anything about
+    what you do on your phone. Lockdown time is a timer you started on purpose —
+    not a measurement of your usage.</p>
+
+    <h2>Where it lives</h2>
+    <p>Circle data is stored in Apple CloudKit, tied to your iCloud account, under
+    Apple's security and data-processing terms. Ember has no separate backend and
+    no analytics or tracking SDKs. There are no ads in the current version; if a
+    future version shows optional rewarded ads, they will never receive your
+    screen-time data.</p>
+
+    <h2>Deleting your data</h2>
+    <p>"Start over" in Ember's settings deletes your profile and your friendship
+    records from CloudKit and wipes the app's local data. Deleting the app removes
+    all on-device data, including your streak — by design, a streak cannot be
+    parked and restored.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR), you may have
+    rights to access, correct, or erase personal data. The circle data described
+    above is the complete inventory; you can see it in the app and erase it with
+    "Start over" at any time, or contact us via the App Store page.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version appears here with an updated date.</p>
+
+    <footer>
+      <p><a href="../">Ember</a> · <a href="../terms/">Terms of Service</a> · © 2026 Friedrich von Werner</p>
+    </footer>
+  </div>
+</body>
+</html>
