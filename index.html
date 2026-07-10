@@ -37,6 +37,12 @@
     .hero { display: grid; gap: 3rem; align-items: center; padding: 3.5rem 0; }
     h1 { font-family: var(--serif); font-size: 3rem; line-height: 1.05; letter-spacing: -0.02em; font-weight: 600; }
     .hero p { margin-top: 1.5rem; max-width: 46ch; font-size: 1.125rem; line-height: 1.6; color: var(--ink2); }
+    .cta { margin-top: 2rem; }
+    .button { display: inline-block; background: var(--green); color: #ffffff; font-weight: 600;
+              padding: 0.875rem 1.625rem; border-radius: 999px; text-decoration: none;
+              box-shadow: 0 12px 28px -12px rgba(31, 102, 80, 0.6); }
+    .button:hover { background: #1a5745; }
+    .hero .ctanote { margin-top: 0.75rem; font-size: 0.875rem; color: var(--ink3); }
     .phone { width: 270px; margin: 0 auto; border-radius: 3rem; background: var(--ink); padding: 10px;
              box-shadow: 0 24px 60px -20px rgba(38, 34, 27, 0.45); }
     .phone img { width: 100%; height: auto; border-radius: 2.4rem; display: block; }
@@ -84,6 +90,10 @@
       <div>
         <h1>Screen time you keep, together.</h1>
         <p>Ember puts a daily limit on the apps you choose. Stay inside it, grow a streak, and let a few friends keep you honest.</p>
+        <div class="cta">
+          <a class="button" href="https://testflight.apple.com/join/ADW7nST8">Join the free beta on TestFlight</a>
+          <p class="ctanote">iPhone, iOS 26 or newer.</p>
+        </div>
       </div>
       <div class="phone">
         <img src="ember-home-light.png" width="1206" height="2622"
@@ -92,7 +102,7 @@
     </section>
 
     <section class="wall">
-      <h2>The limit is a wall.</h2>
+      <h2>When time is up, it is up.</h2>
       <p class="lede">When today's budget is spent, your tracked apps close behind a gentle screen. There are exactly four ways forward, and every one of them is deliberate.</p>
       <ul class="doors">
         <li>
@@ -104,15 +114,15 @@
           <p class="doordesc">Half an hour more, paid with a freeze you earned by keeping seven days.</p>
         </li>
         <li>
-          <div class="doorname"><span class="dot" style="background: var(--ember)"></span>Start the emergency timer</div>
-          <p class="doordesc">Three minutes to finish what matters. Three of those a day, no more.</p>
+          <div class="doorname"><span class="dot" style="background: var(--ember)"></span>Take two emergency minutes</div>
+          <p class="doordesc">A short wait, then two minutes in the app that matters. Up to three times per app each day.</p>
         </li>
         <li>
-          <div class="doorname"><span class="dot" style="background: var(--clay)"></span>Ask your partner</div>
-          <p class="doordesc">One friend can open a real exception: fifteen minutes, an hour, or the rest of the day.</p>
+          <div class="doorname"><span class="dot" style="background: var(--clay)"></span>Ask your lifeline</div>
+          <p class="doordesc">One friend you choose can open a real exception: fifteen minutes, an hour, or the rest of the day.</p>
         </li>
       </ul>
-      <p class="kicker">A wall, not a suggestion: there is no &ldquo;keep scrolling anyway&rdquo; button.</p>
+      <p class="kicker">A real limit, not a suggestion: there is no &ldquo;keep scrolling anyway&rdquo; button.</p>
     </section>
 
     <section class="privacy">
@@ -127,7 +137,7 @@
         <span>Ember</span>
       </div>
       <div class="right">
-        <p>In private on-device testing. Coming to the App Store.</p>
+        <p><a href="https://testflight.apple.com/join/ADW7nST8" style="color: var(--green)">Free beta on TestFlight</a> &middot; Coming to the App Store.</p>
         <p>Made by Friedrich von Werner &middot; &copy; 2026</p>
         <p><a href="privacy/" style="color: var(--green)">Privacy</a> &middot; <a href="terms/" style="color: var(--green)">Terms</a></p>
       </div>
