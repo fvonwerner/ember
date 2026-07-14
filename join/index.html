@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Join me on Ember</title>
-  <meta name="description" content="A friend invited you to Ember: screen time you keep, together.">
+  <title>Join me on Spare</title>
+  <meta name="description" content="A friend invited you to Spare: screen time you keep, together.">
   <meta name="robots" content="noindex">
   <link rel="icon" href="../ember-icon.png">
   <style>
@@ -37,15 +37,15 @@
 </head>
 <body>
   <main class="card">
-    <img class="appicon" src="../ember-icon.png" alt="Ember app icon">
-    <h1 id="headline">You're invited to Ember.</h1>
+    <img class="appicon" src="../ember-icon.png" alt="Spare app icon">
+    <h1 id="headline">You're invited to Spare.</h1>
     <p class="sub" id="subline">Screen time you keep, together: a daily limit that really locks, a streak, and a friend who can unlock you when it matters.</p>
     <div class="buttons">
       <a class="button primary" id="install" href="https://testflight.apple.com/join/ADW7nST8">Get the free beta on TestFlight</a>
-      <a class="button secondary" id="open" href="ember://invite" hidden>I have Ember, add my friend</a>
+      <a class="button secondary" id="open" href="ember://invite" hidden>I have Spare, add my friend</a>
     </div>
-    <p class="note">iPhone, iOS 26 or newer. If you already have Ember, the second button connects you in one tap.</p>
-    <a class="home" href="../">What is Ember?</a>
+    <p class="note">iPhone, iOS 26 or newer. If you already have Spare, the second button connects you in one tap.</p>
+    <a class="home" href="../">What is Spare?</a>
   </main>
   <script>
     // Personalize from ?tag=…&name=… and arm the deep link. The scheme
@@ -57,14 +57,14 @@
       var name = (params.get("name") || "").trim();
       if (!tag) { return; }
       var who = name || "@" + tag;
-      document.getElementById("headline").textContent = who + " invited you to Ember.";
+      document.getElementById("headline").textContent = who + " invited you to Spare.";
       document.getElementById("subline").textContent =
         "Screen time you keep, together. Join " + who +
         "'s circle: you'll see each other's limit and streak, never each other's hours.";
       var open = document.getElementById("open");
       open.href = "ember://invite?tag=" + encodeURIComponent(tag) +
                   "&name=" + encodeURIComponent(name);
-      open.textContent = "I have Ember, add " + who;
+      open.textContent = "I have Spare, add " + who;
       open.hidden = false;
     })();
   </script>
