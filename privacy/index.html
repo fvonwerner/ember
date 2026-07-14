@@ -41,10 +41,10 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 14, 2026</p>
+    <p class="updated">Last updated: July 15, 2026</p>
 
     <div class="callout">
-      <p>The short version: your screen time is measured by iOS and stays on your phone. Spare never uploads your hours, your app list, or anything you look at. Friends see only what the app shows them: your name and tag, your daily limit, your streak, your day outcomes, and your lockdown time.</p>
+      <p>The short version: your screen time is measured by iOS and stays on your phone. Circle is optional. If you use it, each friendship gets a separate private Apple CloudKit share. Friends never see your hours, tracked apps, or other friends.</p>
     </div>
 
     <h2>Who we are</h2>
@@ -60,30 +60,33 @@
     even Spare itself sees only coarse threshold events, not your browsing.</p>
 
     <h2>What syncs when you use the circle</h2>
-    <p>If you add friends, Spare stores a small profile in Apple's iCloud
-    (CloudKit), so your circle can see it:</p>
+    <p>If you choose to use Circle, Spare creates a separate private/shared
+    Apple CloudKit zone for each friend you invite. Apple asks that person to
+    accept before either of you appears in the other's Circle. A pair share contains:</p>
     <ul>
-      <li>your display name and user tag (chosen by you — no email, no phone number),</li>
+      <li>your display name and an app-generated account identifier (no email or phone number),</li>
       <li>your daily limit in minutes,</li>
       <li>your current streak and how each recent day ended (kept, kept with help, over, unverified),</li>
       <li>your voluntary lockdown minutes per week (time you chose to put the phone down),</li>
-      <li>friendships, nudges, and partner requests/answers you send.</li>
+      <li>nudges, session invitations and responses, and lifeline requests/answers you deliberately send.</li>
     </ul>
-    <p>Like other apps built on CloudKit's shared public database, these profile basics are technically readable by other users of the app, not only your circle. They never include your usage hours or your app list.</p>
+    <p>Circle data is not searchable and is not stored in CloudKit's public database. Each accepted friend can access only the share created for that friendship.</p>
     <p>Never synced: your hours of usage, which apps you track, or anything about
     what you do on your phone. Lockdown time is a timer you started on purpose —
     not a measurement of your usage.</p>
 
     <h2>Where it lives</h2>
-    <p>Circle data is stored in Apple CloudKit, tied to your iCloud account, under
+    <p>Circle data is stored in Apple's private/shared CloudKit databases, tied to your iCloud account, under
     Apple's security and data-processing terms. Spare has no separate backend and
     no analytics or tracking SDKs. There are no ads in the current version; if a
     future version shows optional rewarded ads, they will never receive your
     screen-time data.</p>
 
     <h2>Deleting your data</h2>
-    <p>"Start over" in Spare's settings deletes your profile and your friendship
-    records from CloudKit and wipes the app's local data. Deleting the app removes all on-device data. A small recovery backup (your name, tag, limit, streak and recent day outcomes) lives in your PRIVATE iCloud database, so reinstalling can restore your account; "Start over" deletes that backup too.</p>
+    <p>"Delete account and data" in Spare's settings deletes every friend share you own, leaves shares owned by friends, deletes the private recovery record, and then wipes local data. If CloudKit deletion fails, Spare keeps the local identity and shows an error so you can retry. Deleting the app removes local data but a small private recovery backup may restore your display name, identifier, limit, streak, and recent day outcomes after reinstalling.</p>
+
+    <h2>Safety, reports, and blocking</h2>
+    <p>Spare filters the short user-authored strings it transports. You can report a safety concern, block an account, remove a friend, or revoke sharing from a friend's profile. Reports are prepared on your device for you to send through the system share sheet. A dedicated support contact will be published on this site and the App Store page before release.</p>
 
     <h2>Your rights</h2>
     <p>Depending on where you live (for example under the GDPR), you may have
